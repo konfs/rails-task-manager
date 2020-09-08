@@ -1,0 +1,15 @@
+<h1>Task</h1>
+<p>Find me in app/views/tasks/task.html.erb</p>
+<ul>
+<% @tasks.each do |task| %>
+    <li>
+        <a href="/tasks/<%= task.id %>">
+        <%= task.title %>
+        </a>
+    </li>
+<% end %>
+</ul>
+
+<hr>
+
+<a href="tasks/new">+ add a new task</a>
